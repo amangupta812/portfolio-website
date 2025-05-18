@@ -1,6 +1,7 @@
 import React from 'react';
 import { Github as GitHub, Linkedin, Twitter } from 'lucide-react';
 import { motion } from 'framer-motion';
+import photo from "../assets/photo.jpg";
 
 function Hero() {
   const container = {
@@ -21,8 +22,8 @@ function Hero() {
 
   const socialLinks = [
     { icon: <GitHub size={24} />, url: 'https://github.com/amangupta812', label: 'GitHub' },
-    { icon: <Linkedin size={24} />, url: 'www.linkedin.com/in/aman-gupta-034ab62a9', label: 'LinkedIn' },
-    { icon: <Twitter size={24} />, url: 'https://twitter.com', label: 'Twitter' },
+    { icon: <Linkedin size={24} />, url: 'https://www.linkedin.com/in/aman-gupta-034ab62a9/', label: 'LinkedIn' },
+    { icon: <Twitter size={24} />, url: 'https://x.com/Aman_Gupta2288', label: 'Twitter' },
   ];
 
   return (
@@ -39,10 +40,11 @@ function Hero() {
           <div className="inline-block relative">
             <div className="absolute inset-0 bg-primary-200 dark:bg-primary-700 rounded-full blur-3xl opacity-20"></div>
             <img
-              src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              alt="Profile"
-              className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-4 border-white dark:border-gray-800 shadow-lg mx-auto"
+                src={photo}
+                alt="Aman Kumar"
+                className="rounded-full shadow-xl w-48 h-48 object-cover border-4 border-yellow-400"
             />
+
           </div>
         </motion.div>
         

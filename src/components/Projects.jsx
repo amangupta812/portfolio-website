@@ -38,7 +38,8 @@ function Projects() {
                 <img 
                   src={project.image} 
                   alt={project.title} 
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                  loading='lazy'
+                  className="w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
                 />
               </div>
               <div className="p-6">
@@ -63,7 +64,9 @@ function Projects() {
                     href={project.githubUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center space-x-1 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400"
+                    className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-sm rounded-md hover:bg-primary-100 dark:hover:bg-primary-800 transition"
+
+
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >
@@ -75,7 +78,9 @@ function Projects() {
                       href={project.liveUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center space-x-1 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400"
+                      className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-sm rounded-md hover:bg-primary-100 dark:hover:bg-primary-800 transition"
+
+
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
                     >

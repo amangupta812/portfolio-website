@@ -1,12 +1,14 @@
+import cosmoTravelImg from "../assets/cosmo-travel.jpg"; // adjust path if needed
+
 export const projects = [
   {
     id: 1,
-    title: "E-commerce Platform",
-    description: "A full-stack e-commerce application with cart functionality, product filtering, and user authentication.",
-    image: "https://images.pexels.com/photos/6781307/pexels-photo-6781307.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    title: "Cosmo Travel",
+    description: "A travel booking platform with features like tour listings, booking system, budget travel suggestions, city-based guide system, and booking history.",
+    image: cosmoTravelImg,
     technologies: ["React", "Node.js", "MongoDB", "Express", "Tailwind CSS"],
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com"
+    githubUrl: "https://github.com/amangupta812/cosmo-travel",
+    liveUrl: "https://cosmo-travel-hub.netlify.app/"
   },
   {
     id: 2,
