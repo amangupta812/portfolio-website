@@ -30,5 +30,5 @@ GitHub: github.com/amangupta812
 
 LinkedIn: linkedin.com/in/aman-gupta-034ab62a9
 
-Twitter: twitter.com/@Aman
--Gupta2288
+Twitter:[ twitter.com/@Aman
+-Gupta2288](https://x.com/Aman_Gupta2288)
