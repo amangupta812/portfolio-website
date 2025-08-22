@@ -112,7 +112,7 @@ function Footer() {
                   d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                 />
               </svg>
-              contact@amangupta.com
+              amanku0036@gmail.com
             </p>
             <p className="flex items-start mb-2 text-gray-400">
               <svg
@@ -135,7 +135,7 @@ function Footer() {
                   d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                 />
               </svg>
-              San Francisco, California
+              Vadodara,Gujarat
             </p>
           </div>
         </div>
@@ -147,8 +147,8 @@ function Footer() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5 }}
           >
-            © {currentYear} Aman Gupta. Made with
-            <Heart size={16} className="mx-1 text-red-500" />
+            © {currentYear} Aman Gupta. 
+            {/* <Heart size={16} className="mx-1 text-red-500" /> */}
             All rights reserved.
           </motion.p>
         </div>

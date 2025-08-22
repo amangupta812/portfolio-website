@@ -3,12 +3,6 @@ import { motion } from 'framer-motion';
 import { Mail, MapPin, Send } from 'lucide-react';
 
 function Contact() {
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // In a real app, you would handle the form submission here
-    alert('Message sent successfully!');
-  };
-
   return (
     <section id="contact" className="py-20 bg-gray-50 dark:bg-gray-800">
       <div className="max-w-6xl mx-auto px-4">
@@ -49,10 +43,10 @@ function Contact() {
                     Email
                   </h4>
                   <a 
-                    href="mailto:contact@amangupta.com" 
+                    href="mailto:amanku0036@gmail.com" 
                     className="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
                   >
-                    contact@amangupta.com
+                    amanku0036@gmail.com
                   </a>
                 </div>
               </div>
@@ -66,7 +60,7 @@ function Contact() {
                     Location
                   </h4>
                   <p className="text-gray-600 dark:text-gray-300">
-                    San Francisco, California
+                    Vadodara, Gujarat
                   </p>
                 </div>
               </div>
@@ -126,7 +120,27 @@ function Contact() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <form onSubmit={handleSubmit} className="bg-white dark:bg-gray-700 rounded-xl p-8 shadow-lg">
+            <form 
+              action="https://formsubmit.co/your@email.com" 
+              method="POST"
+              className="bg-white dark:bg-gray-700 rounded-xl p-8 shadow-lg"
+            >
+              <input 
+                type="hidden" 
+                name="_subject" 
+                value="New contact form submission!" 
+              />
+              <input 
+                type="hidden" 
+                name="_autoresponse" 
+                value="Thank you for reaching out! I've received your message and will get back to you soon." 
+              />
+              <input 
+                type="hidden" 
+                name="_next" 
+                value="https://yourwebsite.com/thank-you" 
+              />
+              
               <h3 className="text-2xl font-semibold mb-6 text-gray-800 dark:text-white">
                 Send Message
               </h3>
