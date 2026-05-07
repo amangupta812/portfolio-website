@@ -12,20 +12,22 @@ export const projects = [
   },
   {
     id: 2,
-    title: "Task Management App",
-    description: "A task manager application with drag-and-drop functionality, task categorization, and real-time updates.",
-    image: "https://images.pexels.com/photos/6963944/pexels-photo-6963944.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    technologies: ["React", "JavaScript", "Firebase", "Tailwind CSS"],
-    githubUrl: "https://github.com"
+    title: "NovaCart",
+    description: "A modern full-stack e-commerce platform with secure authentication, product management, shopping cart, payment integration (Razorpay/Stripe), and admin dashboard.",
+    image: "https://images.pexels.com/photos/3962286/pexels-photo-3962286.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    technologies: ["React", "Node.js", "MongoDB", "Express", "Redux Toolkit", "JWT", "Tailwind CSS"],
+    githubUrl: "https://github.com/amangupta812/novacart-ecommerce",
+    liveUrl: "https://novacart-store.netlify.app/"
   },
   {
     id: 3,
-    title: "Weather Dashboard",
-    description: "A weather application that displays current weather and forecasts for multiple locations with data visualization.",
-    image: "https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    technologies: ["React", "JavaScript", "API Integration", "Chart.js"],
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com"
+    title: "Smart Finance Assistant",
+    description: "An AI-powered finance management application that helps users track expenses, analyze spending patterns, and make smarter financial decisions through interactive dashboards and intelligent insights. Features expense tracking, budget analysis, AI financial insights, and real-time data visualization.",
+    image: "https://images.pexels.com/photos/416322/pexels-photo-416322.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    technologies: ["React", "Node.js", "Express", "MongoDB", "Chart.js", "AI Integration", "JWT"],
+    githubUrl: "https://github.com/amangupta812/smart-finance-assistant",
+    liveUrl: "https://smart-finance-assistant.netlify.app/",
+    theme: "finance"
   },
   {
     id: 4,

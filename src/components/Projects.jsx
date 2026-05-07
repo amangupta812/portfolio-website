@@ -27,7 +27,11 @@ function Projects() {
           {projects.map((project, index) => (
             <motion.div
               key={project.id}
-              className="bg-gray-50 dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
+              className={`rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 ${
+                project.theme === 'finance' 
+                  ? 'bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-950 dark:to-emerald-950 border-2 border-green-200 dark:border-green-800' 
+                  : 'bg-gray-50 dark:bg-gray-800'
+              }`}
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -43,17 +47,30 @@ function Projects() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2 text-gray-800 dark:text-white">
-                  {project.title}
-                </h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-4">
+                <div className="flex items-center justify-between mb-2">
+                  <h3 className="text-xl font-bold text-gray-800 dark:text-white">
+                    {project.title}
+                  </h3>
+                  {project.theme === 'finance' && (
+                    <span className="text-2xl">💰</span>
+                  )}
+                </div>
+                <p className={`mb-4 ${
+                  project.theme === 'finance'
+                    ? 'text-gray-700 dark:text-gray-200'
+                    : 'text-gray-600 dark:text-gray-300'
+                }`}>
                   {project.description}
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.technologies.map((tech) => (
                     <span
                       key={tech}
-                      className="px-3 py-1 bg-primary-100 dark:bg-primary-900/30 text-primary-600 dark:text-primary-300 text-xs rounded-full"
+                      className={`px-3 py-1 text-xs rounded-full ${
+                        project.theme === 'finance'
+                          ? 'bg-green-200 dark:bg-green-900/50 text-green-700 dark:text-green-300 font-semibold'
+                          : 'bg-primary-100 dark:bg-primary-900/30 text-primary-600 dark:text-primary-300'
+                      }`}
                     >
                       {tech}
                     </span>
@@ -64,9 +81,11 @@ function Projects() {
                     href={project.githubUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-sm rounded-md hover:bg-primary-100 dark:hover:bg-primary-800 transition"
-
-
+                    className={`px-3 py-1 text-sm rounded-md transition flex items-center space-x-1 ${
+                      project.theme === 'finance'
+                        ? 'bg-green-200 dark:bg-green-900 text-green-700 dark:text-green-300 hover:bg-green-300 dark:hover:bg-green-800'
+                        : 'bg-gray-100 dark:bg-gray-700 hover:bg-primary-100 dark:hover:bg-primary-800'
+                    }`}
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >
@@ -78,9 +97,11 @@ function Projects() {
                       href={project.liveUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-sm rounded-md hover:bg-primary-100 dark:hover:bg-primary-800 transition"
-
-
+                      className={`px-3 py-1 text-sm rounded-md transition flex items-center space-x-1 ${
+                        project.theme === 'finance'
+                          ? 'bg-green-200 dark:bg-green-900 text-green-700 dark:text-green-300 hover:bg-green-300 dark:hover:bg-green-800'
+                          : 'bg-gray-100 dark:bg-gray-700 hover:bg-primary-100 dark:hover:bg-primary-800'
+                      }`}
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
                     >

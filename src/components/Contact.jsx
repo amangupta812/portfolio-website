@@ -43,10 +43,10 @@ function Contact() {
                     Email
                   </h4>
                   <a 
-                    href="mailto:amanku0036@gmail.com" 
+                    href="mailto:amangupta8.tech@gmail.com" 
                     className="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
                   >
-                    amanku0036@gmail.com
+                    amangupta8.tech@gmail.com
                   </a>
                 </div>
               </div>

@@ -10,7 +10,7 @@ function Footer() {
       <div className="max-w-6xl mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4 text-white">Aman Gupta</h3>
+            <h3 className="text-xl font-bold mb-4 text-white">Aman Kumar</h3>
             <p className="mb-4 text-gray-400">
               Web developer focused on creating beautiful and functional digital experiences.
             </p>
@@ -112,7 +112,7 @@ function Footer() {
                   d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                 />
               </svg>
-              amanku0036@gmail.com
+              amangupta8.tech@gmail.com
             </p>
             <p className="flex items-start mb-2 text-gray-400">
               <svg
@@ -147,7 +147,7 @@ function Footer() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5 }}
           >
-            © {currentYear} Aman Gupta. 
+            © {currentYear} Aman Kumar. 
             {/* <Heart size={16} className="mx-1 text-red-500" /> */}
             All rights reserved.
           </motion.p>

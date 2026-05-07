@@ -28,7 +28,8 @@ function Navbar() {
 
   const navItems = [
     { label: 'Home', id: 'home' },
-    { label: 'About', id: 'about' },
+    { label: 'Experience', id: 'experience' },
+    { label: 'Skills', id: 'about' },
     { label: 'Projects', id: 'projects' },
     { label: 'Contact', id: 'contact' },
   ];

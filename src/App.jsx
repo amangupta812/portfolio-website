@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { ThemeProvider } from './context/ThemeContext';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import Experience from './components/Experience';
 import About from './components/About';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
@@ -24,7 +25,7 @@ function App() {
     `;
     document.head.appendChild(style);
     
-    document.title = "Aman Gupta | Web Developer";
+    document.title = "Aman Kumar | Web Developer";
 
     const fontLink = document.createElement('link');
     fontLink.href = 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap';
@@ -42,6 +43,7 @@ function App() {
       <div className="font-sans text-gray-900 dark:text-white bg-white dark:bg-gray-900 min-h-screen">
         <Navbar />
         <Hero />
+        <Experience />
         <About />
         <Projects />
         <Contact />
